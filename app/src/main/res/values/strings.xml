@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Karate Counter</string>
+    <string name="IPPON">IPPON</string>
+    <string name="WAZAARI">WAZA-ARI</string>
+    <string name="YUKO">YUKO</string>
+    <string name="WARNING">WARNING</string>
+    <string name="RESET">RESET</string>
+    <string name="Nulla">0</string>
+    <string name="Red">Red Team</string>
+    <string name="Blue">Blue Team</string>
+</resources>
