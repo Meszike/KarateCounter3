@@ -193,6 +193,7 @@ public class MainActivity extends AppCompatActivity {
         savedInstanceState.putInt("saveB", ScoreTeamB);
         savedInstanceState.putInt("savedA", WarningA);
         savedInstanceState.putInt("savedB", WarningB);
+
     }
 
     /**
