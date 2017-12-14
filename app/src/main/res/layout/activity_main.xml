@@ -4,16 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="#000000"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/kungfu"
     tools:context="com.example.android.karatecounter.MainActivity">
 
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@mipmap/kungfu"
 
-        />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -62,44 +58,55 @@
 
                         />
 
-                    <Button
+                    <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/threebutton"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        app:magic_button_size="50dp"
                         android:layout_marginBottom="@dimen/material_margin_4"
                         android:layout_marginLeft="@dimen/material_margin_6"
-                        android:layout_marginRight="@dimen/material_margin_6"
-                        android:layout_marginTop="@dimen/material_margin_6"
-                        android:onClick="addThreeForTeamA"
-                        android:text="@string/IPPON"
-                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="@dimen/material_margin_4"
+                        app:button_icon="@drawable/three"
+                        app:button_icon_width="25dp"
+                        app:button_icon_height="25dp"
+                        app:hide_text="@string/IPPON"
+                        app:hide_text_size="5sp"
+                        app:hide_text_color="#000000"
+                        app:expandable_area_color="#E0E0E0"/>
 
-                        />
-
-                    <Button
+                    <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/twobutton"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        app:magic_button_size="50dp"
                         android:layout_marginBottom="@dimen/material_margin_4"
                         android:layout_marginLeft="@dimen/material_margin_6"
-                        android:layout_marginRight="@dimen/material_margin_6"
-                        android:onClick="addTwoForTeamA"
-                        android:text="@string/WAZAARI"
-                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="@dimen/material_margin_4"
+                        app:button_icon="@drawable/two"
+                        app:button_icon_width="25dp"
+                        app:button_icon_height="25dp"
+                        app:hide_text="@string/WAZAARI"
+                        app:hide_text_size="5sp"
+                        app:hide_text_color="#000000"
+                        app:expandable_area_color="#E0E0E0"/>
 
-                        />
-
-                    <Button
-                        android:id="@+id/freebutton"
-                        android:layout_width="match_parent"
+                    <br.com.bloder.magic.view.MagicButton
+                        android:id="@+id/onebutton"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        app:magic_button_size="50dp"
+                        android:layout_marginBottom="@dimen/material_margin_4"
                         android:layout_marginLeft="@dimen/material_margin_6"
-                        android:layout_marginRight="@dimen/material_margin_6"
-                        android:onClick="addOneForTeamA"
-                        android:text="@string/YUKO"
-                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="@dimen/material_margin_4"
+                        app:button_icon="@drawable/one"
+                        app:button_icon_width="25dp"
+                        app:button_icon_height="25dp"
+                        app:hide_text="@string/YUKO"
+                        app:hide_text_size="5sp"
+                        app:hide_text_color="#000000"
+                        app:expandable_area_color="#E0E0E0"/>
 
-                        />
+
 
                     <TextView
                         android:id="@+id/team_a_warning"
@@ -114,18 +121,23 @@
                         android:textStyle="bold"
 
                         />
-
-                    <Button
+                    <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/warninga"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        app:magic_button_size="50dp"
+                        android:layout_marginBottom="@dimen/material_margin_4"
                         android:layout_marginLeft="@dimen/material_margin_6"
-                        android:layout_marginRight="@dimen/material_margin_6"
-                        android:onClick="addOneWarningForA"
-                        android:text="@string/WARNING"
-                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="@dimen/material_margin_6"
+                        app:button_icon="@drawable/w"
+                        app:button_icon_width="25dp"
+                        app:button_icon_height="25dp"
+                        app:hide_text="@string/WARNING"
+                        app:hide_text_size="5sp"
+                        app:hide_text_color="#000000"
+                        app:expandable_area_color="#E0E0E0"/>
 
-                        />
+
                 </LinearLayout>
 
                 <View
@@ -167,44 +179,56 @@
 
                         />
 
-                    <Button
+                    <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/threebuttonb"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        app:magic_button_size="50dp"
                         android:layout_marginBottom="@dimen/material_margin_4"
                         android:layout_marginLeft="@dimen/material_margin_6"
-                        android:layout_marginRight="@dimen/material_margin_6"
-                        android:layout_marginTop="@dimen/material_margin_6"
-                        android:onClick="addThreeForTeamB"
-                        android:text="@string/IPPON"
-                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="@dimen/material_margin_4"
+                        app:button_icon="@drawable/three"
+                        app:button_icon_width="25dp"
+                        app:button_icon_height="25dp"
+                        app:hide_text="@string/IPPON"
+                        app:hide_text_size="5sp"
+                        app:hide_text_color="#000000"
+                        app:expandable_area_color="#E0E0E0"/>
 
-                        />
 
-                    <Button
+                    <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/twobuttonb"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        app:magic_button_size="50dp"
                         android:layout_marginBottom="@dimen/material_margin_4"
                         android:layout_marginLeft="@dimen/material_margin_6"
-                        android:layout_marginRight="@dimen/material_margin_6"
-                        android:onClick="addTwoForTeamB"
-                        android:text="@string/WAZAARI"
-                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="@dimen/material_margin_4"
+                        app:button_icon="@drawable/two"
+                        app:button_icon_width="25dp"
+                        app:button_icon_height="25dp"
+                        app:hide_text="@string/WAZAARI"
+                        app:hide_text_size="5sp"
+                        app:hide_text_color="#000000"
+                        app:expandable_area_color="#E0E0E0"/>
 
-                        />
-
-                    <Button
-                        android:id="@+id/freebuttonb"
-                        android:layout_width="match_parent"
+                    <br.com.bloder.magic.view.MagicButton
+                        android:id="@+id/onebuttonb"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        app:magic_button_size="50dp"
+                        android:layout_marginBottom="@dimen/material_margin_4"
                         android:layout_marginLeft="@dimen/material_margin_6"
-                        android:layout_marginRight="@dimen/material_margin_6"
-                        android:onClick="addOneForTeamB"
-                        android:text="@string/YUKO"
-                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="@dimen/material_margin_4"
+                        app:button_icon="@drawable/one"
+                        app:button_icon_width="25dp"
+                        app:button_icon_height="25dp"
+                        app:hide_text="@string/YUKO"
+                        app:hide_text_size="5sp"
+                        app:hide_text_color="#000000"
+                        app:expandable_area_color="#E0E0E0"/>
 
-                        />
+
 
                     <TextView
                         android:id="@+id/team_b_warning"
@@ -220,17 +244,22 @@
 
                         />
 
-                    <Button
+                    <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/warningb"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        app:magic_button_size="50dp"
+                        android:layout_marginBottom="@dimen/material_margin_4"
                         android:layout_marginLeft="@dimen/material_margin_6"
-                        android:layout_marginRight="@dimen/material_margin_6"
-                        android:onClick="addOneWarningForBlue"
-                        android:text="@string/WARNING"
-                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="@dimen/material_margin_6"
+                        app:button_icon="@drawable/w"
+                        app:button_icon_width="25dp"
+                        app:button_icon_height="25dp"
+                        app:hide_text="@string/WARNING"
+                        app:hide_text_size="5sp"
+                        app:hide_text_color="#000000"
+                        app:expandable_area_color="#E0E0E0"/>
 
-                        />
                 </LinearLayout>
 
             </LinearLayout>

@@ -10,4 +10,5 @@
     <dimen name="material_padding_1">8dp</dimen>
     <dimen name="material_padding_2">16dp</dimen>
     <dimen name="material_padding_3">32dp</dimen>
+
 </resources>

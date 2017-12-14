@@ -1,10 +1,13 @@
 package com.example.android.karatecounter;
 
+import android.graphics.PorterDuff;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 
+import br.com.bloder.magic.view.MagicButton;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -12,12 +15,85 @@ public class MainActivity extends AppCompatActivity {
     int ScoreTeamB = 0;
     int WarningA = 0;
     int WarningB = 0;
-
+    MagicButton button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        button = (MagicButton)findViewById(R.id.threebutton);
+        button.setMagicButtonClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                scoreTeamA=scoreTeamA+3;
+                displayForTeamA(scoreTeamA);
+            }
+        });
+
+        button = (MagicButton)findViewById(R.id.twobutton);
+        button.setMagicButtonClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                scoreTeamA=scoreTeamA+2;
+                displayForTeamA(scoreTeamA);
+            }
+        });
+
+        button = (MagicButton)findViewById(R.id.onebutton);
+        button.setMagicButtonClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                scoreTeamA=scoreTeamA+1;
+                displayForTeamA(scoreTeamA);
+            }
+        });
+
+        button = (MagicButton)findViewById(R.id.warninga);
+        button.setMagicButtonClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                WarningA=WarningA+1;
+                displayForRedTeam(WarningA);
+            }
+        });
+
+        button = (MagicButton)findViewById(R.id.threebuttonb);
+        button.setMagicButtonClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ScoreTeamB=ScoreTeamB+3;
+                displayForTeamB(ScoreTeamB);
+            }
+        });
+
+        button = (MagicButton)findViewById(R.id.twobuttonb);
+        button.setMagicButtonClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ScoreTeamB=ScoreTeamB+2;
+                displayForTeamB(ScoreTeamB);
+            }
+        });
+
+        button = (MagicButton)findViewById(R.id.onebuttonb);
+        button.setMagicButtonClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ScoreTeamB=ScoreTeamB+1;
+                displayForTeamB(ScoreTeamB);
+            }
+        });
+
+        button = (MagicButton)findViewById(R.id.warningb);
+        button.setMagicButtonClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                WarningB=WarningB+1;
+                displayForBlueTeam(WarningB);
+            }
+        });
+
     }
 
     /**
@@ -25,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displayForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
-        scoreView.setText(String.valueOf(score));
+        scoreView.setText(String.valueOf(scoreTeamA));
     }
 
     /**
@@ -33,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displayForTeamB(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
-        scoreView.setText(String.valueOf(score));
+        scoreView.setText(String.valueOf(ScoreTeamB));
     }
 
     /**
@@ -159,6 +235,27 @@ public class MainActivity extends AppCompatActivity {
         displayForRedTeam(WarningA);
         displayForBlueTeam(WarningB);
 
+    }
+
+    public static void buttonEffect(View button){
+        button.setOnTouchListener(new View.OnTouchListener() {
+
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction()) {
+                    case MotionEvent.ACTION_DOWN: {
+                        v.getBackground().setColorFilter(0xe0f47521, PorterDuff.Mode.SRC_ATOP);
+                        v.invalidate();
+                        break;
+                    }
+                    case MotionEvent.ACTION_UP: {
+                        v.getBackground().clearColorFilter();
+                        v.invalidate();
+                        break;
+                    }
+                }
+                return false;
+            }
+        });
     }
 
 
