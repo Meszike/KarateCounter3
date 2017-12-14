@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import br.com.bloder.magic.view.MagicButton;
 
@@ -63,6 +64,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WarningA = WarningA + 1;
+                if (WarningA==3) {
+                    //Show an error message as a toast
+                    Toast.makeText(MainActivity.this, "Red Team lost! ", Toast.LENGTH_SHORT).show();
+                    scoreTeamA = 0;
+                    WarningA = 0;
+                    displayForTeamA(0);
+                    displayForRedTeam(0);
+                    return;
+                }
                 displayForRedTeam(WarningA);
             }
         });
@@ -109,6 +119,16 @@ public class MainActivity extends AppCompatActivity {
         button.setMagicButtonClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                WarningA = WarningB + 1;
+                if (WarningB==3) {
+                    //Show an error message as a toast
+                    Toast.makeText(MainActivity.this, "Blue Team lost! ", Toast.LENGTH_SHORT).show();
+                    ScoreTeamB = 0;
+                    WarningB = 0;
+                    displayForTeamB(0);
+                    displayForBlueTeam(0);
+                    return;
+                }
                 WarningB = WarningB + 1;
                 displayForBlueTeam(WarningB);
             }
