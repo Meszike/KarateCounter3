@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
         button.setMagicButtonClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                WarningA = WarningB + 1;
+                WarningB = WarningB + 1;
                 if (WarningB==3) {
                     //Show an error message as a toast
                     Toast.makeText(MainActivity.this, "Blue Team lost! ", Toast.LENGTH_SHORT).show();
@@ -129,7 +129,6 @@ public class MainActivity extends AppCompatActivity {
                     displayForBlueTeam(0);
                     return;
                 }
-                WarningB = WarningB + 1;
                 displayForBlueTeam(WarningB);
             }
         });
