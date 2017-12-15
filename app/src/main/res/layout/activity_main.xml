@@ -40,8 +40,8 @@
                         android:gravity="center_horizontal"
                         android:padding="@dimen/material_padding_2"
                         android:text="@string/Red"
-                        android:textColor="#D50000"
-                        android:textSize="20sp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size2"
                         android:textStyle="bold" />
 
                     <TextView
@@ -52,59 +52,60 @@
                         android:fontFamily="sans-serif-light"
                         android:gravity="center_horizontal"
                         android:text="@string/Nulla"
-                        android:textColor="#FFFFFF"
-                        android:textSize="56sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size3"
                         android:textStyle="bold"
 
                         />
+
 
                     <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/threebutton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:magic_button_size="50dp"
+                        app:magic_button_size="@dimen/button_size"
                         android:layout_marginBottom="@dimen/material_margin_4"
                         android:layout_marginLeft="@dimen/material_margin_6"
                         android:layout_marginTop="@dimen/material_margin_4"
                         app:button_icon="@drawable/three"
-                        app:button_icon_width="25dp"
-                        app:button_icon_height="25dp"
+                        app:button_icon_width="@dimen/icon_size"
+                        app:button_icon_height="@dimen/icon_size"
                         app:hide_text="@string/IPPON"
-                        app:hide_text_size="5sp"
-                        app:hide_text_color="#000000"
-                        app:expandable_area_color="#E0E0E0"/>
+                        app:hide_text_size="@dimen/text_size1"
+                        app:hide_text_color="@color/textColor"
+                        app:expandable_area_color="@color/buttonColor"/>
 
                     <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/twobutton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:magic_button_size="50dp"
+                        app:magic_button_size="@dimen/button_size"
                         android:layout_marginBottom="@dimen/material_margin_4"
                         android:layout_marginLeft="@dimen/material_margin_6"
                         android:layout_marginTop="@dimen/material_margin_4"
                         app:button_icon="@drawable/two"
-                        app:button_icon_width="25dp"
-                        app:button_icon_height="25dp"
+                        app:button_icon_width="@dimen/icon_size"
+                        app:button_icon_height="@dimen/icon_size"
                         app:hide_text="@string/WAZAARI"
-                        app:hide_text_size="5sp"
-                        app:hide_text_color="#000000"
-                        app:expandable_area_color="#E0E0E0"/>
+                        app:hide_text_size="@dimen/text_size1"
+                        app:hide_text_color="@color/textColor"
+                        app:expandable_area_color="@color/buttonColor"/>
 
                     <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/onebutton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:magic_button_size="50dp"
+                        app:magic_button_size="@dimen/button_size"
                         android:layout_marginBottom="@dimen/material_margin_4"
                         android:layout_marginLeft="@dimen/material_margin_6"
                         android:layout_marginTop="@dimen/material_margin_4"
                         app:button_icon="@drawable/one"
-                        app:button_icon_width="25dp"
-                        app:button_icon_height="25dp"
+                        app:button_icon_width="@dimen/icon_size"
+                        app:button_icon_height="@dimen/icon_size"
                         app:hide_text="@string/YUKO"
-                        app:hide_text_size="5sp"
-                        app:hide_text_color="#000000"
-                        app:expandable_area_color="#E0E0E0"/>
+                        app:hide_text_size="@dimen/text_size1"
+                        app:hide_text_color="@color/textColor"
+                        app:expandable_area_color="@color/buttonColor"/>
 
 
 
@@ -116,8 +117,8 @@
                         android:fontFamily="sans-serif-light"
                         android:gravity="center_horizontal"
                         android:text="@string/Nulla"
-                        android:textColor="#FFFFFF"
-                        android:textSize="30sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size4"
                         android:textStyle="bold"
 
                         />
@@ -125,17 +126,17 @@
                         android:id="@+id/warninga"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:magic_button_size="50dp"
+                        app:magic_button_size="@dimen/button_size"
                         android:layout_marginBottom="@dimen/material_margin_4"
                         android:layout_marginLeft="@dimen/material_margin_6"
                         android:layout_marginTop="@dimen/material_margin_6"
                         app:button_icon="@drawable/w"
-                        app:button_icon_width="25dp"
-                        app:button_icon_height="25dp"
+                        app:button_icon_width="@dimen/icon_size"
+                        app:button_icon_height="@dimen/icon_size"
                         app:hide_text="@string/WARNING"
-                        app:hide_text_size="5sp"
-                        app:hide_text_color="#000000"
-                        app:expandable_area_color="#E0E0E0"/>
+                        app:hide_text_size="@dimen/text_size1"
+                        app:hide_text_color="@color/textColor"
+                        app:expandable_area_color="@color/buttonColor"/>
 
 
                 </LinearLayout>
@@ -143,7 +144,7 @@
                 <View
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
-                    android:background="#FFFFFF">
+                    android:background="@color/colorPrimary">
 
                 </View>
 
@@ -161,8 +162,8 @@
                         android:gravity="center_horizontal"
                         android:padding="@dimen/material_padding_2"
                         android:text="@string/Blue"
-                        android:textColor="#1A237E"
-                        android:textSize="20sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/text_size2"
                         android:textStyle="bold" />
 
                     <TextView
@@ -173,8 +174,8 @@
                         android:fontFamily="sans-serif-light"
                         android:gravity="center_horizontal"
                         android:text="@string/Nulla"
-                        android:textColor="#FFFFFF"
-                        android:textSize="56sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size3"
                         android:textStyle="bold"
 
                         />
@@ -183,50 +184,50 @@
                         android:id="@+id/threebuttonb"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:magic_button_size="50dp"
+                        app:magic_button_size="@dimen/button_size"
                         android:layout_marginBottom="@dimen/material_margin_4"
                         android:layout_marginLeft="@dimen/material_margin_6"
                         android:layout_marginTop="@dimen/material_margin_4"
                         app:button_icon="@drawable/three"
-                        app:button_icon_width="25dp"
-                        app:button_icon_height="25dp"
+                        app:button_icon_width="@dimen/icon_size"
+                        app:button_icon_height="@dimen/icon_size"
                         app:hide_text="@string/IPPON"
-                        app:hide_text_size="5sp"
-                        app:hide_text_color="#000000"
-                        app:expandable_area_color="#E0E0E0"/>
+                        app:hide_text_size="@dimen/text_size1"
+                        app:hide_text_color="@color/textColor"
+                        app:expandable_area_color="@color/buttonColor"/>
 
 
                     <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/twobuttonb"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:magic_button_size="50dp"
+                        app:magic_button_size="@dimen/button_size"
                         android:layout_marginBottom="@dimen/material_margin_4"
                         android:layout_marginLeft="@dimen/material_margin_6"
                         android:layout_marginTop="@dimen/material_margin_4"
                         app:button_icon="@drawable/two"
-                        app:button_icon_width="25dp"
-                        app:button_icon_height="25dp"
+                        app:button_icon_width="@dimen/icon_size"
+                        app:button_icon_height="@dimen/icon_size"
                         app:hide_text="@string/WAZAARI"
-                        app:hide_text_size="5sp"
-                        app:hide_text_color="#000000"
-                        app:expandable_area_color="#E0E0E0"/>
+                        app:hide_text_size="@dimen/text_size1"
+                        app:hide_text_color="@color/textColor"
+                        app:expandable_area_color="@color/buttonColor"/>
 
                     <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/onebuttonb"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:magic_button_size="50dp"
+                        app:magic_button_size="@dimen/button_size"
                         android:layout_marginBottom="@dimen/material_margin_4"
                         android:layout_marginLeft="@dimen/material_margin_6"
                         android:layout_marginTop="@dimen/material_margin_4"
                         app:button_icon="@drawable/one"
-                        app:button_icon_width="25dp"
-                        app:button_icon_height="25dp"
+                        app:button_icon_width="@dimen/icon_size"
+                        app:button_icon_height="@dimen/icon_size"
                         app:hide_text="@string/YUKO"
-                        app:hide_text_size="5sp"
-                        app:hide_text_color="#000000"
-                        app:expandable_area_color="#E0E0E0"/>
+                        app:hide_text_size="@dimen/text_size1"
+                        app:hide_text_color="@color/textColor"
+                        app:expandable_area_color="@color/buttonColor"/>
 
 
 
@@ -238,8 +239,8 @@
                         android:fontFamily="sans-serif-light"
                         android:gravity="center_horizontal"
                         android:text="@string/Nulla"
-                        android:textColor="#FFFFFF"
-                        android:textSize="30sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size4"
                         android:textStyle="bold"
 
                         />
@@ -248,17 +249,17 @@
                         android:id="@+id/warningb"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:magic_button_size="50dp"
+                        app:magic_button_size="@dimen/button_size"
                         android:layout_marginBottom="@dimen/material_margin_4"
                         android:layout_marginLeft="@dimen/material_margin_6"
                         android:layout_marginTop="@dimen/material_margin_6"
                         app:button_icon="@drawable/w"
-                        app:button_icon_width="25dp"
-                        app:button_icon_height="25dp"
+                        app:button_icon_width="@dimen/icon_size"
+                        app:button_icon_height="@dimen/icon_size"
                         app:hide_text="@string/WARNING"
-                        app:hide_text_size="5sp"
-                        app:hide_text_color="#000000"
-                        app:expandable_area_color="#E0E0E0"/>
+                        app:hide_text_size="@dimen/text_size1"
+                        app:hide_text_color="@color/textColor"
+                        app:expandable_area_color="@color/buttonColor"/>
 
                 </LinearLayout>
 
@@ -271,11 +272,11 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/layout"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="@dimen/material_margin_3"
-                android:layout_marginTop="@dimen/material_margin_3"
+                android:layout_marginBottom="@dimen/material_margin_6"
+                android:layout_marginTop="@dimen/material_margin_6"
                 android:onClick="Reset"
                 android:text="@string/RESET"
-                android:textColor="#000000" />
+                android:textColor="@color/textColor" />
 
 
         </RelativeLayout>

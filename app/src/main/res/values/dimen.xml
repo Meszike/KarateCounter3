@@ -10,5 +10,10 @@
     <dimen name="material_padding_1">8dp</dimen>
     <dimen name="material_padding_2">16dp</dimen>
     <dimen name="material_padding_3">32dp</dimen>
-
-</resources>
+    <dimen name="text_size1">5sp</dimen>
+    <dimen name="text_size2">20sp</dimen>
+    <dimen name="text_size3">56sp</dimen>
+    <dimen name="text_size4">50sp</dimen>
+    <dimen name="icon_size">25dp</dimen>
+    <dimen name="button_size">50sp</dimen>
+  </resources>
