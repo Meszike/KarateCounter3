@@ -7,7 +7,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import br.com.bloder.magic.view.MagicButton;
 
 
@@ -17,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     int WarningA = 0;
     int WarningB = 0;
     MagicButton button;
+    private TextView scoreView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,11 +69,11 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Red Team lost! ", Toast.LENGTH_SHORT).show();
                     scoreTeamA = 0;
                     WarningA = 0;
-                    displayForTeamA(0);
-                    displayForRedTeam(0);
+                    displayForTeamA(scoreTeamA);
+                    displayForRedTeamWarning(WarningA);
                     return;
                 }
-                displayForRedTeam(WarningA);
+                displayForRedTeamWarning(WarningA);
             }
         });
 
@@ -125,11 +125,11 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Blue Team lost! ", Toast.LENGTH_SHORT).show();
                     ScoreTeamB = 0;
                     WarningB = 0;
-                    displayForTeamB(0);
-                    displayForBlueTeam(0);
+                    displayForTeamB(ScoreTeamB);
+                    displayForBlueTeamWarning(WarningB);
                     return;
                 }
-                displayForBlueTeam(WarningB);
+                displayForBlueTeamWarning(WarningB);
             }
         });
 
@@ -138,34 +138,36 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the given score for Red Team.
      */
-    public void displayForTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_a_score);
-        scoreView.setText(String.valueOf(scoreTeamA));
+    public void displayForTeamA(int scoreA) {
+        scoreView = (TextView) findViewById(R.id.team_a_score);
+        scoreView.setText(String.valueOf(scoreA));
+        scoreView = null;
     }
 
     /**
      * Displays the given score for Blue Team.
      */
-    public void displayForTeamB(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
-        scoreView.setText(String.valueOf(ScoreTeamB));
+    public void displayForTeamB(int scoreB) {
+        scoreView = (TextView) findViewById(R.id.team_b_score);
+        scoreView.setText(String.valueOf(scoreB));
+        scoreView = null;
     }
 
     /**
      * Displays the given warning for Red Team.
      */
-    public void displayForRedTeam(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_a_warning);
-        scoreView.setText(String.valueOf(score));
+    public void displayForRedTeamWarning(int warningA) {
+        scoreView = (TextView) findViewById(R.id.team_a_warning);
+        scoreView.setText(String.valueOf(warningA));
     }
 
 
     /**
      * Displays the given warning for Blue Team.
      */
-    public void displayForBlueTeam(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_b_warning);
-        scoreView.setText(String.valueOf(score));
+    public void displayForBlueTeamWarning(int warningB) {
+        scoreView = (TextView) findViewById(R.id.team_b_warning);
+        scoreView.setText(String.valueOf(warningB));
     }
 
 
@@ -177,10 +179,10 @@ public class MainActivity extends AppCompatActivity {
         ScoreTeamB = 0;
         WarningA = 0;
         WarningB = 0;
-        displayForTeamB(0);
-        displayForTeamA(0);
-        displayForRedTeam(0);
-        displayForBlueTeam(0);
+        displayForTeamB(scoreTeamA);
+        displayForTeamA(ScoreTeamB);
+        displayForRedTeamWarning(WarningA);
+        displayForBlueTeamWarning(WarningB);
     }
 
     /**
@@ -213,8 +215,8 @@ public class MainActivity extends AppCompatActivity {
 
         displayForTeamA(scoreTeamA);
         displayForTeamB(ScoreTeamB);
-        displayForRedTeam(WarningA);
-        displayForBlueTeam(WarningB);
+        displayForRedTeamWarning(WarningA);
+        displayForBlueTeamWarning(WarningB);
 
     }
 
