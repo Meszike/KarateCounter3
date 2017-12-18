@@ -24,44 +24,26 @@
 
                     <TextView
                         android:id="@+id/team_a_score"
-                        style="@style/Score"/>
+                        style="@style/Score" />
 
 
                     <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/threebutton"
                         style="@style/MagicButton"
                         app:button_icon="@drawable/three"
-                        app:button_icon_height="@dimen/icon_size"
-                        app:button_icon_width="@dimen/icon_size"
-                        app:expandable_area_color="@color/buttonColor"
-                        app:hide_text="@string/IPPON"
-                        app:hide_text_color="@color/textColor"
-                        app:hide_text_size="@dimen/text_size1"
-                        app:magic_button_size="@dimen/button_size" />
+                        app:hide_text="@string/IPPON" />
 
                     <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/twobutton"
                         style="@style/MagicButton"
                         app:button_icon="@drawable/two"
-                        app:button_icon_height="@dimen/icon_size"
-                        app:button_icon_width="@dimen/icon_size"
-                        app:expandable_area_color="@color/buttonColor"
-                        app:hide_text="@string/WAZAARI"
-                        app:hide_text_color="@color/textColor"
-                        app:hide_text_size="@dimen/text_size1"
-                        app:magic_button_size="@dimen/button_size" />
+                        app:hide_text="@string/WAZAARI" />
 
                     <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/onebutton"
                         style="@style/MagicButton"
                         app:button_icon="@drawable/one"
-                        app:button_icon_height="@dimen/icon_size"
-                        app:button_icon_width="@dimen/icon_size"
-                        app:expandable_area_color="@color/buttonColor"
-                        app:hide_text="@string/YUKO"
-                        app:hide_text_color="@color/textColor"
-                        app:hide_text_size="@dimen/text_size1"
-                        app:magic_button_size="@dimen/button_size" />
+                        app:hide_text="@string/YUKO" />
 
 
                     <TextView
@@ -72,18 +54,14 @@
                         android:id="@+id/warninga"
                         style="@style/MagicButton"
                         app:button_icon="@drawable/w"
-                        app:button_icon_height="@dimen/icon_size"
-                        app:button_icon_width="@dimen/icon_size"
-                        app:expandable_area_color="@color/buttonColor"
-                        app:hide_text="@string/WARNING"
-                        app:hide_text_color="@color/textColor"
-                        app:hide_text_size="@dimen/text_size1"
-                        app:magic_button_size="@dimen/button_size" />
+                        app:hide_text="@string/WARNING" />
 
 
                 </LinearLayout>
 
-                <View style="@style/View"></View>
+                <View style="@style/View">
+
+                </View>
 
 
                 <LinearLayout style="@style/Layout4">
@@ -95,61 +73,36 @@
 
                     <TextView
                         android:id="@+id/team_b_score"
-                        style="@style/Score"
-                        />
+                        style="@style/Score" />
 
                     <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/threebuttonb"
                         style="@style/MagicButton"
                         app:button_icon="@drawable/three"
-                        app:button_icon_height="@dimen/icon_size"
-                        app:button_icon_width="@dimen/icon_size"
-                        app:expandable_area_color="@color/buttonColor"
-                        app:hide_text="@string/IPPON"
-                        app:hide_text_color="@color/textColor"
-                        app:hide_text_size="@dimen/text_size1"
-                        app:magic_button_size="@dimen/button_size" />
+                        app:hide_text="@string/IPPON" />
 
 
                     <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/twobuttonb"
                         style="@style/MagicButton"
                         app:button_icon="@drawable/two"
-                        app:button_icon_height="@dimen/icon_size"
-                        app:button_icon_width="@dimen/icon_size"
-                        app:expandable_area_color="@color/buttonColor"
-                        app:hide_text="@string/WAZAARI"
-                        app:hide_text_color="@color/textColor"
-                        app:hide_text_size="@dimen/text_size1"
-                        app:magic_button_size="@dimen/button_size" />
+                        app:hide_text="@string/WAZAARI" />
 
                     <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/onebuttonb"
                         style="@style/MagicButton"
                         app:button_icon="@drawable/one"
-                        app:button_icon_height="@dimen/icon_size"
-                        app:button_icon_width="@dimen/icon_size"
-                        app:expandable_area_color="@color/buttonColor"
-                        app:hide_text="@string/YUKO"
-                        app:hide_text_color="@color/textColor"
-                        app:hide_text_size="@dimen/text_size1"
-                        app:magic_button_size="@dimen/button_size" />
+                        app:hide_text="@string/YUKO" />
 
                     <TextView
                         android:id="@+id/team_b_warning"
-                        style="@style/Score"/>
+                        style="@style/Score" />
 
                     <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/warningb"
                         style="@style/MagicButton"
                         app:button_icon="@drawable/w"
-                        app:button_icon_height="@dimen/icon_size"
-                        app:button_icon_width="@dimen/icon_size"
-                        app:expandable_area_color="@color/buttonColor"
-                        app:hide_text="@string/WARNING"
-                        app:hide_text_color="@color/textColor"
-                        app:hide_text_size="@dimen/text_size1"
-                        app:magic_button_size="@dimen/button_size" />
+                        app:hide_text="@string/WARNING" />
 
                 </LinearLayout>
 

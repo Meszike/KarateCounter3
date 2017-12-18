@@ -61,7 +61,13 @@
         <item name="android:layout_marginBottom">@dimen/material_margin_4</item>
         <item name="android:layout_marginLeft">@dimen/material_margin_6</item>
         <item name="android:layout_marginTop">@dimen/material_margin_4</item>
-    </style>
+        <item name="button_icon_height">@dimen/icon_size</item>
+        <item name="button_icon_width">@dimen/icon_size</item>
+        <item name="expandable_area_color">@color/buttonColor</item>
+        <item name="hide_text_color">@color/textColor</item>
+        <item name="hide_text_size">@dimen/text_size1</item>
+        <item name="magic_button_size">@dimen/button_size</item>
+        </style>
 
     <style name="View">
         <item name="android:layout_width">1dp</item>
