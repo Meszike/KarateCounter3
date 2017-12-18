@@ -1,5 +1,6 @@
 package com.example.android.karatecounter;
 
+import android.content.pm.ActivityInfo;
 import android.graphics.PorterDuff;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
