@@ -6,4 +6,81 @@
         <!-- Background color of buttons in the app -->
         <item name="colorButtonNormal">#E0E0E0</item>
     </style>
+
+
+    <style name="Layout1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@mipmap/kungfu</item>
+    </style>
+
+    <style name="Layout2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Layout3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Layout4">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Team">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/material_padding_2</item>
+        <item name="android:textSize">@dimen/text_size2</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Score">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/material_margin_5</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:text">@string/Nulla</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/text_size3</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="MagicButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/material_margin_4</item>
+        <item name="android:layout_marginLeft">@dimen/material_margin_6</item>
+        <item name="android:layout_marginTop">@dimen/material_margin_4</item>
+    </style>
+
+    <style name="View">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="ResetButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/layout</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">@dimen/material_margin_6</item>
+        <item name="android:layout_marginTop">@dimen/material_margin_6</item>
+        <item name="android:onClick">Reset</item>
+        <item name="android:text">@string/RESET</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+
 </resources>

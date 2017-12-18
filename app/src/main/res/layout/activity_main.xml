@@ -1,265 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@mipmap/kungfu"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout1"
     tools:context="com.example.android.karatecounter.MainActivity">
 
+    <ScrollView style="@style/Layout2">
 
-
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <RelativeLayout style="@style/Layout2">
 
             <LinearLayout
-
                 android:id="@+id/layout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                style="@style/Layout3">
 
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                <LinearLayout style="@style/Layout4">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif-medium"
-                        android:gravity="center_horizontal"
-                        android:padding="@dimen/material_padding_2"
+                        style="@style/Team"
                         android:text="@string/Red"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="@dimen/text_size2"
-                        android:textStyle="bold" />
+                        android:textColor="@color/colorAccent" />
 
                     <TextView
                         android:id="@+id/team_a_score"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/material_margin_5"
-                        android:fontFamily="sans-serif-light"
-                        android:gravity="center_horizontal"
-                        android:text="@string/Nulla"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="@dimen/text_size3"
-                        android:textStyle="bold"
-
-                        />
+                        style="@style/Score"/>
 
 
                     <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/threebutton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:magic_button_size="@dimen/button_size"
-                        android:layout_marginBottom="@dimen/material_margin_4"
-                        android:layout_marginLeft="@dimen/material_margin_6"
-                        android:layout_marginTop="@dimen/material_margin_4"
+                        style="@style/MagicButton"
                         app:button_icon="@drawable/three"
-                        app:button_icon_width="@dimen/icon_size"
                         app:button_icon_height="@dimen/icon_size"
+                        app:button_icon_width="@dimen/icon_size"
+                        app:expandable_area_color="@color/buttonColor"
                         app:hide_text="@string/IPPON"
-                        app:hide_text_size="@dimen/text_size1"
                         app:hide_text_color="@color/textColor"
-                        app:expandable_area_color="@color/buttonColor"/>
+                        app:hide_text_size="@dimen/text_size1"
+                        app:magic_button_size="@dimen/button_size" />
 
                     <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/twobutton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:magic_button_size="@dimen/button_size"
-                        android:layout_marginBottom="@dimen/material_margin_4"
-                        android:layout_marginLeft="@dimen/material_margin_6"
-                        android:layout_marginTop="@dimen/material_margin_4"
+                        style="@style/MagicButton"
                         app:button_icon="@drawable/two"
-                        app:button_icon_width="@dimen/icon_size"
                         app:button_icon_height="@dimen/icon_size"
+                        app:button_icon_width="@dimen/icon_size"
+                        app:expandable_area_color="@color/buttonColor"
                         app:hide_text="@string/WAZAARI"
-                        app:hide_text_size="@dimen/text_size1"
                         app:hide_text_color="@color/textColor"
-                        app:expandable_area_color="@color/buttonColor"/>
+                        app:hide_text_size="@dimen/text_size1"
+                        app:magic_button_size="@dimen/button_size" />
 
                     <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/onebutton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:magic_button_size="@dimen/button_size"
-                        android:layout_marginBottom="@dimen/material_margin_4"
-                        android:layout_marginLeft="@dimen/material_margin_6"
-                        android:layout_marginTop="@dimen/material_margin_4"
+                        style="@style/MagicButton"
                         app:button_icon="@drawable/one"
-                        app:button_icon_width="@dimen/icon_size"
                         app:button_icon_height="@dimen/icon_size"
+                        app:button_icon_width="@dimen/icon_size"
+                        app:expandable_area_color="@color/buttonColor"
                         app:hide_text="@string/YUKO"
-                        app:hide_text_size="@dimen/text_size1"
                         app:hide_text_color="@color/textColor"
-                        app:expandable_area_color="@color/buttonColor"/>
-
+                        app:hide_text_size="@dimen/text_size1"
+                        app:magic_button_size="@dimen/button_size" />
 
 
                     <TextView
                         android:id="@+id/team_a_warning"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/material_margin_5"
-                        android:fontFamily="sans-serif-light"
-                        android:gravity="center_horizontal"
-                        android:text="@string/Nulla"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="@dimen/text_size4"
-                        android:textStyle="bold"
+                        style="@style/Score" />
 
-                        />
                     <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/warninga"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:magic_button_size="@dimen/button_size"
-                        android:layout_marginBottom="@dimen/material_margin_4"
-                        android:layout_marginLeft="@dimen/material_margin_6"
-                        android:layout_marginTop="@dimen/material_margin_6"
+                        style="@style/MagicButton"
                         app:button_icon="@drawable/w"
-                        app:button_icon_width="@dimen/icon_size"
                         app:button_icon_height="@dimen/icon_size"
+                        app:button_icon_width="@dimen/icon_size"
+                        app:expandable_area_color="@color/buttonColor"
                         app:hide_text="@string/WARNING"
-                        app:hide_text_size="@dimen/text_size1"
                         app:hide_text_color="@color/textColor"
-                        app:expandable_area_color="@color/buttonColor"/>
+                        app:hide_text_size="@dimen/text_size1"
+                        app:magic_button_size="@dimen/button_size" />
 
 
                 </LinearLayout>
 
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:background="@color/colorPrimary">
-
-                </View>
+                <View style="@style/View"></View>
 
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                <LinearLayout style="@style/Layout4">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif-medium"
-                        android:gravity="center_horizontal"
-                        android:padding="@dimen/material_padding_2"
+                        style="@style/Team"
                         android:text="@string/Blue"
-                        android:textColor="@color/colorPrimaryDark"
-                        android:textSize="@dimen/text_size2"
-                        android:textStyle="bold" />
+                        android:textColor="@color/colorPrimaryDark" />
 
                     <TextView
                         android:id="@+id/team_b_score"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/material_margin_5"
-                        android:fontFamily="sans-serif-light"
-                        android:gravity="center_horizontal"
-                        android:text="@string/Nulla"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="@dimen/text_size3"
-                        android:textStyle="bold"
-
+                        style="@style/Score"
                         />
 
                     <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/threebuttonb"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:magic_button_size="@dimen/button_size"
-                        android:layout_marginBottom="@dimen/material_margin_4"
-                        android:layout_marginLeft="@dimen/material_margin_6"
-                        android:layout_marginTop="@dimen/material_margin_4"
+                        style="@style/MagicButton"
                         app:button_icon="@drawable/three"
-                        app:button_icon_width="@dimen/icon_size"
                         app:button_icon_height="@dimen/icon_size"
+                        app:button_icon_width="@dimen/icon_size"
+                        app:expandable_area_color="@color/buttonColor"
                         app:hide_text="@string/IPPON"
-                        app:hide_text_size="@dimen/text_size1"
                         app:hide_text_color="@color/textColor"
-                        app:expandable_area_color="@color/buttonColor"/>
+                        app:hide_text_size="@dimen/text_size1"
+                        app:magic_button_size="@dimen/button_size" />
 
 
                     <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/twobuttonb"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:magic_button_size="@dimen/button_size"
-                        android:layout_marginBottom="@dimen/material_margin_4"
-                        android:layout_marginLeft="@dimen/material_margin_6"
-                        android:layout_marginTop="@dimen/material_margin_4"
+                        style="@style/MagicButton"
                         app:button_icon="@drawable/two"
-                        app:button_icon_width="@dimen/icon_size"
                         app:button_icon_height="@dimen/icon_size"
+                        app:button_icon_width="@dimen/icon_size"
+                        app:expandable_area_color="@color/buttonColor"
                         app:hide_text="@string/WAZAARI"
-                        app:hide_text_size="@dimen/text_size1"
                         app:hide_text_color="@color/textColor"
-                        app:expandable_area_color="@color/buttonColor"/>
+                        app:hide_text_size="@dimen/text_size1"
+                        app:magic_button_size="@dimen/button_size" />
 
                     <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/onebuttonb"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:magic_button_size="@dimen/button_size"
-                        android:layout_marginBottom="@dimen/material_margin_4"
-                        android:layout_marginLeft="@dimen/material_margin_6"
-                        android:layout_marginTop="@dimen/material_margin_4"
+                        style="@style/MagicButton"
                         app:button_icon="@drawable/one"
-                        app:button_icon_width="@dimen/icon_size"
                         app:button_icon_height="@dimen/icon_size"
+                        app:button_icon_width="@dimen/icon_size"
+                        app:expandable_area_color="@color/buttonColor"
                         app:hide_text="@string/YUKO"
-                        app:hide_text_size="@dimen/text_size1"
                         app:hide_text_color="@color/textColor"
-                        app:expandable_area_color="@color/buttonColor"/>
-
-
+                        app:hide_text_size="@dimen/text_size1"
+                        app:magic_button_size="@dimen/button_size" />
 
                     <TextView
                         android:id="@+id/team_b_warning"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/material_margin_5"
-                        android:fontFamily="sans-serif-light"
-                        android:gravity="center_horizontal"
-                        android:text="@string/Nulla"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="@dimen/text_size4"
-                        android:textStyle="bold"
-
-                        />
+                        style="@style/Score"/>
 
                     <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/warningb"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:magic_button_size="@dimen/button_size"
-                        android:layout_marginBottom="@dimen/material_margin_4"
-                        android:layout_marginLeft="@dimen/material_margin_6"
-                        android:layout_marginTop="@dimen/material_margin_6"
+                        style="@style/MagicButton"
                         app:button_icon="@drawable/w"
-                        app:button_icon_width="@dimen/icon_size"
                         app:button_icon_height="@dimen/icon_size"
+                        app:button_icon_width="@dimen/icon_size"
+                        app:expandable_area_color="@color/buttonColor"
                         app:hide_text="@string/WARNING"
-                        app:hide_text_size="@dimen/text_size1"
                         app:hide_text_color="@color/textColor"
-                        app:expandable_area_color="@color/buttonColor"/>
+                        app:hide_text_size="@dimen/text_size1"
+                        app:magic_button_size="@dimen/button_size" />
 
                 </LinearLayout>
 
@@ -268,15 +158,7 @@
 
             <Button
                 android:id="@+id/reset"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/layout"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="@dimen/material_margin_6"
-                android:layout_marginTop="@dimen/material_margin_6"
-                android:onClick="Reset"
-                android:text="@string/RESET"
-                android:textColor="@color/textColor" />
+                style="@style/ResetButton" />
 
 
         </RelativeLayout>
