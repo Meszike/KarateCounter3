@@ -7,7 +7,6 @@
         <item name="colorButtonNormal">#E0E0E0</item>
     </style>
 
-
     <style name="Layout1">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -75,7 +74,6 @@
         <item name="android:background">@color/colorPrimary</item>
     </style>
 
-
     <style name="ResetButton">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -87,6 +85,5 @@
         <item name="android:text">@string/RESET</item>
         <item name="android:textColor">@color/textColor</item>
     </style>
-
 
 </resources>

@@ -14,7 +14,6 @@
                 android:id="@+id/layout"
                 style="@style/Layout3">
 
-
                 <LinearLayout style="@style/Layout4">
 
                     <TextView
@@ -25,7 +24,6 @@
                     <TextView
                         android:id="@+id/team_a_score"
                         style="@style/Score" />
-
 
                     <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/threebutton"
@@ -45,7 +43,6 @@
                         app:button_icon="@drawable/one"
                         app:hide_text="@string/YUKO" />
 
-
                     <TextView
                         android:id="@+id/team_a_warning"
                         style="@style/Score" />
@@ -56,13 +53,9 @@
                         app:button_icon="@drawable/w"
                         app:hide_text="@string/WARNING" />
 
-
                 </LinearLayout>
 
-                <View style="@style/View">
-
-                </View>
-
+                <View style="@style/View"/>
 
                 <LinearLayout style="@style/Layout4">
 
@@ -80,7 +73,6 @@
                         style="@style/MagicButton"
                         app:button_icon="@drawable/three"
                         app:hide_text="@string/IPPON" />
-
 
                     <br.com.bloder.magic.view.MagicButton
                         android:id="@+id/twobuttonb"
@@ -108,11 +100,9 @@
 
             </LinearLayout>
 
-
             <Button
                 android:id="@+id/reset"
                 style="@style/ResetButton" />
-
 
         </RelativeLayout>
     </ScrollView>
